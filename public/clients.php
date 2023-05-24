@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/css/client.css">
-    <link rel="stylesheet" type="text/css" href="../src/css/home.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>TechWiz</title>
 </head>
@@ -22,6 +21,7 @@
                 <li><a  href="contact.php">Contact</a></li>
                 <li><a  href="about.php">About</a></li>
                 <?php
+                session_start();
                 // Check if the user is logged in
                 if (isset($_SESSION['user_id'])) {
                     // User is logged in, generate the "Log out" button
@@ -52,8 +52,6 @@
             </thead>
             <tbody>
                 <?php
-                    
-                    session_start();
                 
                     $servername = "localhost";    
                     $user = "root";        
