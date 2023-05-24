@@ -21,6 +21,7 @@
                 <li><a  href="contact.php">Contact</a></li>
                 <li><a  href="about.php">About</a></li>
                 <?php
+                session_start(); // Start the session
                 // Check if the user is logged in
                 if (isset($_SESSION['user_id'])) {
                     // User is logged in, generate the "Log out" button
