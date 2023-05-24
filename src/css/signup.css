@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body{
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Aldrich', sans-serif;
+    color: #fff;
+}
+.form-control{
+    height: 41px;
+    background: #f2f2f2;
+    box-shadow: none !important;
+    border: none;
+}
+.form-control:focus{
+    background: #e2e2e2;
+}
+.form-control, .btn{        
+    border-radius: 3px;
+}
+.signup-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border: 1px;
+    padding: 20px;
+    border-radius: 60px;
+    margin: 0 auto;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+.signup-form h2 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+}
+.signup-form hr {
+    margin: 0 -30px 20px;
+}    
+.signup-form .form-group{
+    margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"]{
+    margin-top: 3px;
+}
+.signup-form .row div:first-child{
+    padding-right: 10px;
+}
+.signup-form .row div:last-child{
+    padding-left: 20px;
+}
+.signup-form .btn{        
+    font-size: 16px;
+    font-weight: bold;
+    background: #394867;
+    border: none;
+    min-width: 140px;
+    color: white;
+}
+.signup-{
+    font-size: 18px; 
+    font-weight: bold;
+    background: #ffffff;
+    border: none;
+    min-width: 400px;
+    color: black;
+    border-radius: 60px; 
+}
+
+.signup-form .btn:hover, .signup-form .btn:focus{
+    background: #19376D !important;
+    outline: none;
+}
+.signup-form a{
+    color: #fff;
+    text-decoration: underline;
+}
+.signup-form a:hover{
+    text-decoration: none;
+}
+.signup-form form a{
+    color: #3598dc;
+    text-decoration: none;
+}	
+.signup-form form a:hover{
+    text-decoration: underline;
+}
+.signup-form .hint-text {
+    padding-bottom: 15px;
+    text-align: center;
+}
+.form-group input{
+    color: black;
+}
