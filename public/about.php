@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>TechWiz - about page</title>
 </head>
+
 <body>
     <div class="main_nav">
         <div class="title">
@@ -15,13 +17,13 @@
         </div>
         <div>
             <ul class="nav_links">
-                <li><a  href="index.php">Home</a></li>
-                <li><a  href="clients.php">Clients</a></a></li>
-                <li><a  href="contact.php">Contact</a></li>
-                <li><a  class="current" href="about.php">About</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="clients.php">Clients</a></a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a class="current" href="about.php">About</a></li>
                 <?php
                 session_start(); // Start the session
-
+                
                 // Check if the user is logged in
                 if (isset($_SESSION['user_id'])) {
                     // User is logged in, generate the "Log out" button
@@ -37,10 +39,12 @@
     <!-- About us -->
     <div class="about-container">
         <h1>About Us</h1>
-        <p>Techwiz is an educational website sharing the latest information on advanced technology, like gadgets and software. 
-            It's perfect for aspiring tech experts because it has a friendly community that exchanges ideas, answers questions, 
-            and offers advice. Whether you're a beginner or an expert, Techwiz is the go-to resource for tech enthusiasts. 
-            It provides a welcoming environment for anyone interested in technology.</p>
+        <p>Techwiz is a comprehensive service platform that simplifies client management for businesses and
+            professionals. It offers a centralized hub for organizing client information, tracking interactions, and
+            fostering seamless communication. With task and project management capabilities, clients' needs and
+            deadlines can be efficiently addressed. Techwiz also provides a collaborative community where clients can
+            connect, share ideas, and seek advice, creating a supportive environment for all. Experience streamlined
+            client management and enhanced communication with Techwiz.</p>
     </div>
     <div class="info">
         <div id="container">
@@ -70,6 +74,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="../src/js/authenticate.js"></script> 
+    <script type="text/javascript" src="../src/js/authenticate.js"></script>
 </body>
+
 </html>
