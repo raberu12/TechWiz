@@ -108,7 +108,6 @@ ul li {
     margin: 20px;
     border-radius: 10px
 }
-
 .contact-container{
     width: 80%;
     margin: 50px auto;
@@ -204,54 +203,30 @@ button:hover{
     transition: .3s;
     color: black;
 }
-.left-column-image-1 img{
-    width: 600px;
-    height: 350px;
-    border-radius: 15px;
-    position: absolute;
-    top: 15%;
-    right: 65%;
-}
-.left-column-image-2 img{
-    width: 600px;
-    height: 350px;
-    border-radius: 15px;
-    position: absolute;
-    top: 55%;
-    right: 51%;
-    opacity: 0.7;
-}
-.vertical-line{
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    width: 0px;
-    height: 800px;
-    border-radius: 15px;
-    border-left: 3px solid #E3F4F4;
-}
-.main-content{
-    width: 80%;
-    margin: 0;
-    font-family: 'Futura PT', sans-serif;
-    color: white;                                   
-}
-.right-column{
-    width: 850px;
-    flex-basis: 60%;
-    padding-top: 100px;
-    padding-left: 5px;
+.right-column-image-1 img{
+    width: 750px;
     height: 450px;
-    margin: 60px 0px 10px 0px;
-    overflow-x: hidden;
+    border-radius: 15px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
 }
-.right-column h1{
-    font-size: 62px;
-  }
-.right-column h2{
-    font-size: 40px;
+.left-column{
+    font-family: 'Futura PT', sans-serif;
+    color: #fff;
 }
+.left-column h1{
+    position: absolute;
+    font-size: 55px;
+    top: 40%;
+    left: 3%;    
+}
+.left-column h2{
+    position: absolute;
+    font-size: 50px;
+    top: 47%;
+    left: 5%;   
+} 
 .read-more{
     position: absolute;
     top: 44%;

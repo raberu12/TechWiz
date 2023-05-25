@@ -23,8 +23,8 @@
 </head>
 <body>
     <heading>
-            <h1><strong>TechWiz</strong></h1>
-            <img id="logo" src="../src/img/techwizlg.png">
+            <h1><strong> <a href="index.php">TechWiz</a></strong></h1>
+            <a href="index.php"><img id="logo" src="../src/img/techwizlg.png"></a> 
     </heading>
     <div class="form-box">
         <form id="loginForm" class="form-value" method="get" onsubmit="loginSubmit(event)">

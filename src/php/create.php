@@ -44,7 +44,7 @@
 
             $success_msg = "Client added successfully";
 
-            header("location: /techwiz/public/clients.php");
+            header("location: /techwiz/techwiz/public/clients.php");
             exit;
 
         }while (false);

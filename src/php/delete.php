@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $error_msg = "Failed to delete client: " . $connection->error;
     }
 
-    header("location: /techwiz/public/clients.php");
+    header("location: /techwiz/techwiz/public/clients.php");
     exit;
 }
 ?>

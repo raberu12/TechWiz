@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         $success_msg = "Updated";
 
-        header("location: /techwiz/public/clients.php");
+        header("location: /TechWiz/TechWiz/public/clients.php");
         exit;
 
     }

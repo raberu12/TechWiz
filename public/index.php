@@ -39,31 +39,15 @@
     <!-- Landing Page -->
     <div class="landing-container">
         <div class="left-column">
-            <div class="left-column-image-1">
+                <h1>Empowering Client Success</h1>
+                <h2>Better Solutions for your business!</h2>
+                <p></p>
+        </div>
+        <div class="right-column">
+            <div class="right-column-image-1">
                 <img src="../src/img/landing_img.png" alt="Image">
             </div>
-            <div class="left-column-image-2">
-                <img src="../src/img/landing_img1.png" alt="Image">
-            </div>
         </div>
-        <div class="vertical-line">
-            <div class="main-content">
-                <div class="right-column">
-                    <h1>Empowering Client Success</h1>
-                    <h2>through Seamless Management and Collaboration!</h2>
-                    <p>Welcome to Techwiz, the ultimate platform for efficient client management and collaboration.
-                        Whether you're a business owner, freelancer, or professional service provider, we have the tools
-                        and features to streamline your client interactions, enhance communication, and drive success.
-                        Our comprehensive platform offers centralized client information management, seamless
-                        communication channels, and robust task and project management capabilities. Join our thriving
-                        community of like-minded professionals and unlock the power of effective client management with
-                        Techwiz.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="read-more">
-        <a href="about.php">Read more...</a>
     </div>
     <script type="text/javascript" src="../src/js/authenticate.js"></script>
 </body>
