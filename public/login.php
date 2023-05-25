@@ -47,6 +47,10 @@
             </div>
         </form>
     </div>
+    <footer>
+        <div class="footer-text">
+            &copy;  TechWiz All Rights Reserved
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="../src/js/authenticate.js"></script>

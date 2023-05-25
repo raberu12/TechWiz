@@ -74,6 +74,10 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-text">
+            &copy;  TechWiz All Rights Reserved
+    </footer>
     <script type="text/javascript" src="../src/js/authenticate.js"></script>
 </body>
 
