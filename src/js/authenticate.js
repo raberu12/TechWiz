@@ -51,4 +51,10 @@ function logoutSubmit() {
     xhttp.open("GET", "../src/php/logout_process.php", true);
     xhttp.send();
 }
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
 
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}

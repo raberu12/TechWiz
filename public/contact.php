@@ -8,25 +8,34 @@
     <title>TechWiz - contact</title>
 </head>
 <body>
-    <div class="main_nav">
+<div class="main_nav">
         <div class="title">
             <h1>TechWiz</h1><img src="../src/img/techwizlg.png">
         </div>
         <div>
             <ul class="nav_links">
-                <li><a  href="index.php">Home</a></li>
-                <li><a  href="clients.php">Service</a></a></li>
-                <li><a  class="current" href="contact.php">Contact</a></li>
-                <li><a  href="about.php">About</a></li>
+                <li><a href="index.php">Home</a></li>
                 <?php
                 session_start(); // Start the session
-
+                
                 // Check if the user is logged in
                 if (isset($_SESSION['user_id'])) {
-                    // User is logged in, generate the "Log out" button
+                    // User is logged in, display the "Log out" button
+                    echo '<li><a href="clients.php">Service</a></li>'; // Include the "Service" option for logged-in users
+                } else {
+                    // User is not logged in, display the "Log in" button and add onclick attribute to open the popup
+                    echo '<li><a href="#" onclick="openPopup()">Service</a></li>'; // Include the "Service" option with the popup
+                }
+                ?>
+                <li><a class="current"  href="contact.php">Contact</a></li>
+                <li><a href="about.php">About</a></li>
+                <?php
+                // Check if the user is logged in
+                if (isset($_SESSION['user_id'])) {
+                    // User is logged in, display the "Log out" button
                     echo '<li><a class="btn" href="#" onclick="logoutSubmit()">Log out</a></li>';
                 } else {
-                    // User is not logged in, generate the "Log in" button
+                    // User is not logged in, display the "Log in" button and add onclick attribute to open the popup
                     echo '<li><a class="btn" href="login.php">Log in</a></li>';
                 }
                 ?>
@@ -94,6 +103,14 @@
         <div class="footer-text">
             &copy;  TechWiz All Rights Reserved
     </footer>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Login Required</h2>
+            <p>Please log in to access the services.</p>
+            <a class="popup-btn" href="login.php">Log In</a>
+        </div>
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="../src/js/authenticate.js"></script>
